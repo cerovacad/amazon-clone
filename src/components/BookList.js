@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getBooks } from '../actions/bookActions';
+import { getCart } from '../actions/cartActions';
 import BookItem from './BookItem';
 
 class BookList extends Component {
   state = { books: [] }
 
   componentDidMount = () => {
+    this.props.dispatch(getCart());
     this.props.dispatch(getBooks());
     this.setState({
         books: this.props.books

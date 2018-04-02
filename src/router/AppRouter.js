@@ -5,6 +5,7 @@ import NotFoundPage from '../components/pages/NotFoundPage';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AddDeleteBookPage from '../components/pages/AddDeleteBookPage';
+import CartPage from '../components/pages/CartPage';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -12,7 +13,8 @@ const AppRouter = () => (
       <Header/>
       <Switch>
         <Route path='/' component={HomePage} exact={true}/>
-        <Route path='/create' component={AddDeleteBookPage}/>
+        <Route path='/add' component={AddDeleteBookPage}/>
+        <Route path='/cart' component={CartPage}/>
         <Route component={NotFoundPage}/>
       </Switch>
       <Footer/>

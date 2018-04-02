@@ -5,7 +5,8 @@ const Header = () => (
   <header>
     <h4>Header</h4>
     <NavLink to="/">Home</NavLink>
-    <NavLink to="/create">Add</NavLink>
+    <NavLink to="/add">Add</NavLink>
+    <NavLink to="/cart">Cart</NavLink>
   </header>
 );
 
