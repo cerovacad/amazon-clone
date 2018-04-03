@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
+import BookForm from '../BookForm';
 
 class AddDeleteBookPage extends Component {
-  state = {  }
   render() {
-    return (
-      <div>
-        <h1>Add or Delete Book</h1>
-      </div>
-    );
+    return <BookForm />
   }
 }
 

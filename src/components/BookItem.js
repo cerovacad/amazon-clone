@@ -23,7 +23,7 @@ class BookItem extends Component {
       <div className='book-item'>
         <h3>{this.props.title}</h3>
         <p>{this.props.description}</p>
-        <h4>{this.props.price}$</h4>
+        <h4>{this.props.hardcoverPrice}$</h4>
         <button>Buy now</button>
         {!!this.state.isAddedToCart ?  
           (<span>Added to cart</span>) :

@@ -14,10 +14,15 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
-      }
-    ]
+      }, {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }]
   },
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public')
   }
